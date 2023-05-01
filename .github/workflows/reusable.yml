@@ -13,7 +13,8 @@ jobs:
     steps:
       - name: Get Code
         uses: actions/download-artifact@v3
-        with: ${{ inputs.artifact-name }}
+        with: 
+          name: ${{ inputs.artifact-name }}
       - name: List Files
         run: ls
       - name: Output Information
